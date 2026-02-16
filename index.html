@@ -97,6 +97,36 @@
                 </div>
             </div>
         </section>
+
+        <!--Segunda sección para el trasfondo e historia del juego-->
+        <section id="historia" class="py-24 px-6 bg-oscuro relative overflow-hidden">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <!--El orden de los elementos se cambia cuando la pantalla se hace más pequeña-->
+                <div class="order-2 md:order-1">
+                    <!--El grayscale le da un toque antiguo a las imágenes, se le quita cuando hacemos hover-->
+                    <img src="./img/saquear.jpg" alt="Explorador en la nieve" class="rounded-sm border border-hielo/20 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+                </div>
+
+                <div class="order-1 md:order-2">
+                    <h2 class="tituloSeccion">El Fin de la <span class="text-hielo">Civilización</span></h2>
+                    <p class="text-hielo/60 text-lg mb-6">
+                        El siglo XIX terminó con una era de hielo a nivel planetario. La tecnología del vapor es nuestra única esperanza frente a los -40°C que azotan nuestras puertas.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-l-2 border-fuego pl-4 py-2">
+                            <span class="block text-nieve font-bold text-2xl">1886</span>
+                            <span class="text-xs uppercase text-hielo/40 tracking-widest">El Gran Invierno</span>
+                        </div>
+
+                        <div class="border-l-2 border-hielo pl-4 py-2">
+                            <span class="block text-nieve font-bold text-2xl">-150°C</span>
+                            <span class="text-xs uppercase text-hielo/40 tracking-widest">Punto de Quiebre</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
