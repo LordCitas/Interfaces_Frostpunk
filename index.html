@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frostpunk</title>
+    <!--He tenido que usar este enlace porque con el otro se me rompe-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!--Importo la fuente Inter que voy a usar-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    //Paleta de colores personalizada
                     colors: {
                         'oscuro': '#05070a',
                         'hielo': '#a5f3fc',
@@ -18,33 +21,32 @@
                         'nieve': '#f8fafc',
                     },
 
+                    //Fuente personalizada
                     fontFamily: {
                         'industrial': ['Oswald', 'sans-serif'],
                         'body': ['Inter', 'sans-serif'],
                     },
-
-                    backgroundImage: {
-                        'hero-pattern': "url('lordcitas/interfaces_frostpunk/Interfaces_Frostpunk-7fa219b7c702590256e3cea2915db533e3bf79ea/img/main_background.jpg')",
-                    }
                 }
             }
         }
     </script>
 
+    <!--Defino algunas clases para reutilizar-->
     <style type="text/tailwindcss">
         @layer components{
-            .btn-frost {
+            .botonCongelado {
                 @apply px-8 py-3 bg-hielo/10 border border-hielo text-hielo font-industrial uppercase tracking-widest transition-all duration-300 hover:bg-hielo hover:text-oscuro focus:ring-2 focus:ring-hielo focus:ring-offset-2 focus:ring-offset-oscuro;
             }
-            .section-title {
+            .tituloSeccion {
                 @apply font-industrial text-4xl md:text-6xl text-nieve mb-6 uppercase tracking-tighter;
             }
-            .glass-card {
+            .tarjeta {
                 @apply bg-oscuro/80 backdrop-blur-md border border-white/10 overflow-hidden transition-transform duration-500 hover:scale-[1.02] rounded;
             }
         }
     </style>
 </head>
+
 <body class="bg-oscuro text-nieve font-body overflow-x-hidden">
     <header class="fixed w-full z-50 bg-oscuro/60 backdrop-blur-lg border-b border-hielo/20">
         <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -59,8 +61,9 @@
                 <li><a href="#yermo" class="hover:text-hielo transition-colors">El Yermo</a></li>
             </ul>
 
-            <a href="#cta" class="hidden md:block btn-frost text-xs py-2 px-4">Comenzar</a>
+            <a href="#jugar" class="hidden md:block botonCongelado text-xs py-2 px-4">Comenzar</a>
             
+            <!--Menú hamburguesa-->
             <button class="md:hidden text-hielo">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
