@@ -71,8 +71,32 @@
             </button>
         </nav>
     </header>
-    <main>
 
+    <main>
+        <!--Primera sección de presentación-->
+        <section id="presentacion" class="relative min-h-screen flex items-center justify-center pt-20">
+            <!--Imagen de fondo con absolute-relative para ponerle un filtro encima-->
+            <div class="absolute inset-0 z-0">
+                <img src="./img/main_background.jpg" alt="Generador Central" class="w-full h-full object-cover opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-t from-oscuro via-transparent to-oscuro/80"></div>
+            </div>
+            
+            <!--Otro relative en el contenido para poder ponerlo encima del fondo-->
+            <div class="relative z-10 text-center px-6 max-w-4xl">
+                <!--El tracking regula el espacio entre letras, y el animate-pulse hace que palpite-->
+                <span class="text-fuego font-industrial tracking-[0.3em] uppercase mb-4 block animate-pulse">Londres ha caído</span>
+                <h1 class="text-6xl md:text-9xl font-industrial text-nieve leading-none mb-8 drop-shadow-2xl">LA CIUDAD DEBE <span class="text-hielo tracking-[0.1em]">SOBREVIVIR</span></h1>
+                <p class="text-lg md:text-xl text-hielo/80 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                    Como el Capitán del último bastión de la humanidad, debes gestionar recursos, dictar leyes y mantener el calor en un mundo consumido por el frío eterno.
+                </p>
+
+                <!--Botones responsive-->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#historia" class="botonCongelado">Explorar mecánica</a>
+                    <a href="#generador" class="px-8 py-3 border border-fuego/50 text-fuego font-industrial uppercase hover:bg-fuego hover:text-white transition-all">Encender Generador</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
