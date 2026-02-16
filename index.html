@@ -77,7 +77,7 @@
         <section id="presentacion" class="relative min-h-screen flex items-center justify-center pt-20">
             <!--Imagen de fondo con absolute-relative para ponerle un filtro encima-->
             <div class="absolute inset-0 z-0">
-                <img src="./img/main_background.jpg" alt="Generador Central" class="w-full h-full object-cover opacity-60">
+                <img src="./img/main_background.jpg" alt="Capitán frente a las masas" class="w-full h-full object-cover opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-t from-oscuro via-transparent to-oscuro/80"></div>
             </div>
             
@@ -104,7 +104,7 @@
                 <!--El orden de los elementos se cambia cuando la pantalla se hace más pequeña-->
                 <div class="order-2 md:order-1">
                     <!--El grayscale le da un toque antiguo a las imágenes, se le quita cuando hacemos hover-->
-                    <img src="./img/saquear.jpg" alt="Explorador en la nieve" class="rounded-sm border border-hielo/20 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+                    <img src="./img/saquear.jpg" alt="Exploradores en las ruinas" class="rounded-sm border border-hielo/20 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
                 </div>
 
                 <div class="order-1 md:order-2">
@@ -146,14 +146,14 @@
                     </div>
                 </div>
                 <div class="tarjeta">
-                    <img src="./img/capataz.jpg" alt="Recolección de recursos" class="w-full h-56 object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    <img src="./img/capataz.jpg" alt="Capataz gritando" class="w-full h-56 object-cover grayscale hover:grayscale-0 transition-all duration-700">
                     <div class="p-6">
                         <h3 class="font-industrial text-xl text-hielo mb-2 uppercase">Extracción Extrema</h3>
                         <p class="text-sm text-nieve/70">Asigna trabajadores a minas de carbón y aserraderos. La eficiencia marcará la diferencia entre la vida y la muerte.</p>
                     </div>
                 </div>
                 <div class="tarjeta">
-                    <img src="./img/devastada.jpg" alt="Ruinas" class="w-full h-56 object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    <img src="./img/devastada.jpg" alt="Generador en llamas" class="w-full h-56 object-cover grayscale hover:grayscale-0 transition-all duration-700">
                     <div class="p-6">
                         <h3 class="font-industrial text-xl text-hielo mb-2 uppercase">Mantenimiento</h3>
                         <p class="text-sm text-nieve/70">Repara las estructuras que resulten dañadas tras las heladas. El generador no puede fallar bajo ninguna circunstancia.</p>
@@ -161,9 +161,102 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!--Cuarta sección con el sistema de leyes del juego-->
+        <section id="leyes" class="pt-24 px-6 relative">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-stretch">
+                <div class="flex flex-col justify-center">
+                    <h2 class="tituloSeccion">El Libro de <span class="text-fuego">Leyes</span></h2>
+                    <p class="text-hielo/70 mb-8">
+                        ¿Permitirás el trabajo infantil para aumentar la producción? ¿O tratarás a los enfermos con cuidados paliativos para ahorrar suministros? Cada decisión altera el Descontento y la Esperanza.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="p-4 bg-fuego/10 border-l-4 border-fuego">
+                            <h4 class="font-industrial text-nieve">ORDEN Y DISCIPLINA</h4>
+                            <p class="text-xs text-hielo/60 uppercase tracking-tighter">Controla a la masa mediante la fuerza y la vigilancia.</p>
+                        </div>
+
+                        <div class="p-4 bg-hielo/10 border-l-4 border-hielo">
+                            <h4 class="font-industrial text-nieve">FE Y ESPIRITUALIDAD</h4>
+                            <p class="text-xs text-hielo/60 uppercase tracking-tighter">Une a tu pueblo a través de la esperanza y la religión.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 min-h-[400px]">
+                    <div class="h-full">
+                        <img src="./img/reunion.jpg" alt="Reunión de ciudadanos" class="block w-full h-full object-cover rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+
+                    <div class="h-full">
+                        <img src="./img/religion.jpg" alt="Procesión religiosa" class="block w-full h-full object-cover rounded shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Quinta sección con la mecánica de exploración-->
+        <section id="yermo" class="py-24 px-6 bg-gradient-to-b from-oscuro to-slate-950">
+            <div class="max-w-7xl mx-auto">
+                <div class="relative group overflow-hidden rounded-lg">
+                    <!--El group-hover le hace zoom-->
+                    <img src="./img/supervivientes.jpg" alt="Supervivientes en el yermo" class="w-full h-[500px] object-cover transition-transform duration-1000 group-hover:scale-110">
+
+                    <div class="absolute inset-0 bg-gradient-to-r from-oscuro via-oscuro/40 to-transparent flex items-center p-8 md:p-16">
+                        <div class="max-w-md">
+                            <h2 class="tituloSeccion text-4xl">Explora el <span class="text-hielo">Yermo</span></h2>
+                            <p class="text-hielo/80 mb-6">Envía equipos de exploradores al exterior. Encuentra otros asentamientos, recursos perdidos y, quizás, otros supervivientes.</p>
+                            <button class="botonCongelado">Desplegar Exploradores</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sexta sección para invitar al lector a jugar-->
+        <section id="jugar" class="py-32 px-6 relative text-center overflow-hidden"> 
+            <div class="absolute inset-0 z-0">
+                <img src="./img/tormentaPrueba.jpg" alt="La gran tormenta" class="w-full h-full object-cover opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-t from-oscuro/0 via-transparent to-slate-950"></div>
+            </div>
+            
+            
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <h2 class="tituloSeccion">¿Estás listo para el <span class="text-hielo">Invierno</span>?</h2>
+                <p class="text-xl text-hielo/70 mb-12">La gran tormenta se acerca. El termómetro bajará hasta lo impensable. Tus decisiones determinarán si la humanidad verá un mañana.</p>
+
+                <!--El sm:flex-row hace que se muestre en horizontal en pantallas más grandes, horizontal en otro caso-->
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Tu correo electrónico" class="flex-1 px-6 py-3 bg-oscuro border border-hielo/30 text-nieve focus:outline-none focus:border-hielo">
+                    <button type="submit" class="botonCongelado whitespace-nowrap">Empezar a jugar</button>
+                </form>
+
+                <!--text-[10px] ajusta el tamaño de fuente a ese valor de píxeles-->
+                <p class="mt-4 text-[10px] uppercase tracking-widest text-hielo/30 italic">Noticias de los desarrolladores | Actualizaciones sobre el juego</p>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer con información adicional-->
+    <footer class="bg-oscuro border-t border-white/5 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <img src="./img/Frostpunk_Logo.png" alt="Logo del juego Frostpunk" class="h-32">
+            
+            <div class="text-center md:text-right">
+                <p class="text-xs text-hielo/30 tracking-widest uppercase mb-2">Entrega Tailwind - Diseño de Interfaces Web</p>
+
+                <div class="flex justify-center md:justify-end gap-6 text-hielo/50 text-sm">
+                    <a href="#" class="hover:text-hielo transition-colors">Términos</a>
+                    <a href="#" class="hover:text-hielo transition-colors">Privacidad</a>
+                    <a href="#" class="hover:text-hielo transition-colors">11 bit studios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8 text-[10px] text-hielo/20 uppercase tracking-widest">
+            <p>Hecho por Daniel Aybar Soto</p>
+        </div>
     </footer>
 </body>
 </html>
